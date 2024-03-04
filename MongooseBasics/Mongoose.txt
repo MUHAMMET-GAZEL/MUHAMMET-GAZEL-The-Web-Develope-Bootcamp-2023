@@ -1,0 +1,37 @@
+
+// We always need to connect mongoos with our programming language, we use drivers for that.
+// https://www.mongodb.com/docs/drivers/
+
+ after writing in the git bash the following command : "npm i -y" , we now can install mongoose: "npm i mongoose"
+
+ we then create a js file: "touch index.js"
+
+ const mongoose = require('mongoose');
+ mongoose.connect('mongodb://127.0.0.1:27017/dataBaseName');
+    
+*** schema is like a template:
+*** we define a shcema:
+
+	const movieSchema = new mongoose.Schema({
+    		title: String,
+    		year: Number,
+    		score: Number,
+    		rating: String
+	})
+
+*** 
+	
+	const Movie = mongoose.model('Movie', movieSchema);
+
+
+						INSERTING 
+
+	const amadeus = new Movie({ title: 'Amadeus', year: 1986, score: 9.2, rating: 'R' });
+
+						
+						FINDING
+
+	Movie.find({documentProperty:value}).then(data => console.log(data))
+
+** 
+ 	we can now go to our gir bash , after opening the project repository, we write: "node", then ".load index.js", then "objectName"

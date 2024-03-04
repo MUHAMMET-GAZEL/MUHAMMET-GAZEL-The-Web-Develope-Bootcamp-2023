@@ -1,0 +1,48 @@
+
+1- To enter to Mongo Shell we use the command: "mongosh"
+
+2- To create a new database we use the command : "use NewDatabaseName"
+
+3- To Display Current Database we use the command: "db"
+
+4- To display our Database collections we use the command: "show collections"
+
+5- To create a new collection in our Database we use thye command: "db.NewCollectionName"
+
+
+
+						INSERTION WITH MONGO
+
+				   
+6- To add one new object to a collection we use the command: "db.DataBaseName.insertOne({})"
+
+7- To add multiple objects to a collection we use the command: "db.DataBaseName.insert([{},{},{},...])"
+
+
+						FINDING WITH MONGO
+
+
+8- To search for a specific field in a collection we use the command: "db.ColectionName.find({fieldName=value})" //it does not
+
+   return the actual document(s) just a cursor pointing at them
+
+
+						UPDATING WITH MONGO
+
+
+9- To update one object in a collection we use the command : "db.collectionName.updateOne({searchedFieldName:value},{$set{fieldName:NewValue}})"
+
+10- To add a new field in an object in a collection we use the command: "db.collectionName.updateOne({searchedFieldName:value},{$set{newFieldName:NewValue}})"
+
+11- $currentDate operater does exist
+
+
+						DELETION WITH MONGO
+
+12-To delete an object from a collection we use the command: "db.collectionName.deleteOne({searchedFieldName:value})"	
+
+
+
+					
+
+13- To display all elements in a collection we use the command: "db.ColectionName.find()"

@@ -1,0 +1,146 @@
+body {
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-description {
+    color: #555555;
+    /* Changed text color */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    /* Ensure text wraps within container */
+}
+
+  body {
+    background-color: #f8f9fa; /* Light gray background color */
+    font-family: Arial, sans-serif; /* Default font */
+    line-height: 1.6; /* Line height for better readability */
+    color: #343a40; /* Dark gray text color */
+}
+
+.container {
+    padding: 20px;
+    max-width: 800px; /* Set max-width for better layout on larger screens */
+    margin: 0 auto; /* Center align the container */
+}
+
+.product-container {
+    background-color: #fff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 30px;
+}
+
+.title {
+    color: #007bff; /* Blue title color */
+    margin-bottom: 20px;
+    text-align: center; /* Center align title */
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow to the image */
+    transition: transform 0.5s ease; /* Smooth transition for zoom effect */
+}
+
+.product-image:hover {
+    transform: scale(1.025); /* Zoom effect on hover */
+}
+
+.product-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #6c757d; /* Gray label color */
+}
+
+.product-description {
+    margin-bottom: 20px;
+    color: #6c757d; /* Description text color */
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #28a745; /* Green color for price */
+    margin-bottom: 20px;
+}
+
+.product-category {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #6c757d; /* Gray category color */
+}
+
+.product-actions {
+    margin-top: 20px;
+    text-align: center; /* Center align actions */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition for button color change */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue primary button color */
+    border-color: #007bff;
+    color: #ffffff; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Dark blue hover color */
+    border-color: #0056b3;
+}
+
+.btn-info {
+    background-color: #17a2b8; /* Info button color */
+    border-color: #17a2b8;
+    color: #ffffff; /* White text color */
+}
+
+.btn-info:hover {
+    background-color: #117a8b; /* Darker info button hover color */
+    border-color: #117a8b;
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Danger button color */
+    border-color: #dc3545;
+    color: #ffffff; /* White text color */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker danger button hover color */
+    border-color: #bd2130;
+}

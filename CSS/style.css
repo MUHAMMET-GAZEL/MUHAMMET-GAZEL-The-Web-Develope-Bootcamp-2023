@@ -1,0 +1,66 @@
+* {
+    text-align: center;
+}
+
+h1 a {
+    color: darkgoldenrod;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#earth {
+    text-decoration: underline blue wavy;
+}
+
+#mars {
+    text-decoration: underline red wavy;
+}
+
+.class1 {
+    color: rgb(236, 25, 190);
+    font-family: fantasy;
+}
+
+p+div {
+    text-decoration: line-through;
+}
+
+div>div {
+    color: blueviolet;
+}
+
+input[type="text"] {
+    color: rgb(68, 236, 107);
+}
+
+#earth:hover {
+    color: aqua;
+}
+
+#mars:hover {
+    color: aqua;
+}
+
+#mars:active {
+    text-decoration: underline palevioletred wavy;
+    font-size: 16 px;
+    letter-spacing: 7px;
+}
+
+button:hover {
+    background-color: aqua;
+    color: rgb(57, 65, 75);
+}
+
+.div:nth-child(odd) {
+    color: rgb(236, 25, 190);
+    background-color: rgb(17, 225, 225);
+}
+
+.div:nth-child(even) {
+    color: rgb(17, 225, 225);
+    background-color: rgb(236, 25, 190);
+}

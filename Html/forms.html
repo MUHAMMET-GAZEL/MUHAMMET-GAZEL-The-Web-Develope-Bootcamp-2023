@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>forms demo</h1>
+    <form action="/test">
+        <!--action attribute specifies where the form data should be sent to-->
+        <p>
+            <!--
+                input type may be : text , password , number , color , checkbox , radio ...etc
+
+                type="text" : is used when the data to be received from the user is text .
+
+                type="password" : is used when the data to be recieved from user is a password .
+
+                type="number" : is used when the data to be recieved from the user is a number , it will not allow text.
+
+                type="checkbox" : The checkbox is shown as a square box that is ticked (checked) when activated 
+                .Checkboxes are used to let a user select one or more options of a limited number of choices.
+
+                type="radio" : Radio buttons are normally presented in radio groups (a collection of radio buttons describing a set of related options). 
+                Only one radio button in a group can be selected at the same time.
+                
+                type="range" : 
+            -->
+            <label for="text">Enter Username</label>
+            <!--labels are used to connect the text with the input-->
+            <!--for attribute is used to determine the input id which our label will be connected to-->
+            <input type="text" placeholder="enter your username" id="text" name="username">
+            <!--type attribute determines what type of input to be recieved-->
+            <!--placeholder attribute is used to temporary display text that we want to display to define what should the user enter till the user starts to write something-->
+            <!--name attribute is used as a specifier of element(s) , which will be sent to the server via URL-->
+        </p>
+        <p>
+            <label for="password">Enter your password</label>
+            <input type="password" placeholder="enter your password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Choose your color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input type="number" placeholder="enter your number" id="number" name="num" min="1" max="120">
+        </p>
+        <!--
+            min attribute is responsible for determining the minium value that can be taken as an input
+            max attribute is responsble for dtermining the maximum value that can be taken as an input
+        -->
+        <button>Submit</button>
+        <!--button tag is used to create submission button-->
+        <hr>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search on Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search on Youtube</button>
+    </form>
+    <form action="/test">
+
+        <h2>more input forms</h2>
+        <label for="check">I agree on the privacy policy</label>
+        <input type="checkbox" id="check" name="agree_to">
+        <button>submit</button>
+
+        <p>
+            <label for="XS">XS</label>
+            <input type="radio" name="Size" id="XS" value="XS">
+            <!--the value attribute is : a string containing the radio's button value-->
+            <label for="S">S</label>
+            <input type="radio" name="Size" id="S" value="S">
+            <label for="M">M</label>
+            <input type="radio" name="Size" id="M" value="M">
+            <label for="L">L</label>
+            <input type="radio" name="Size" id="L" value="L">
+            <button>Submit</button>
+        </p>
+    </form>
+    <hr>
+    <form action="/test">
+        <label for="">Please select your favorite pet</label>
+        <select name="favorite-pet" id="pet-select">
+            <!---->
+            <option value="">Select a pet</option>
+            <option value="dog">dog</option>
+            <option value="cat">cat</option>
+            <option value="chicken">chicken</option>
+            <option value="fish">fish</option>
+            <option value="pig">pig</option>
+            <option value="crocodile">crocodile</option>
+        </select>
+
+        <hr>
+        <p>
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="5" value="70">
+            <!---->
+        </p>
+
+        <p>
+            <label for="text">Please enter your text </label>
+            <textarea name="text" id="text" cols="50" rows="10" placeholder="enter your text"></textarea>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+    <hr>
+    <form action="/test">
+        <h2>Validation Demo</h2>
+        <p>
+            <label for="name">please enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required>
+        </p>
+        <p>
+            <label for="pass">please enter your password</label>
+            <input type="password" name="pass" id="pass" placeholder="password" minlength="6" maxlength="20" required>
+
+        </p>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>

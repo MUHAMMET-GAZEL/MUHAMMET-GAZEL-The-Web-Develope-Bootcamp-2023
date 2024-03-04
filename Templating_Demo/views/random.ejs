@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+
+<body>
+    <h1> Your Random Number is: <%= rand1 %><!-- embed a value and render it in the document-->
+    </h1>
+    <h3>
+        <%= rand1%2===0 ? 'EVEN' : 'ODD' %>
+    </h3>
+    <h1> Your Second Random Number is: <%= rand2 %>
+
+    </h1>
+    <h3>
+        <%= rand2%2===0 ? 'EVEN' : 'ODD' %>
+    </h3>
+    <% if(rand1===rand2){ %> <!-- does not render anything itself-->
+        <h1> Congrats!! you got to identical random numbers!!! </h1>
+        <% } %>
+</body>
+
+</html>

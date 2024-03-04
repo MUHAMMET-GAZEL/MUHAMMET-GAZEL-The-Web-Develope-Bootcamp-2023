@@ -1,0 +1,27 @@
+header {
+    text-transform: uppercase;
+    background-color: rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    text-align: center;
+}
+
+nav>a {
+    background-color: rgb(215, 216, 215);
+    color: rgb(0, 0, 0);
+}
+
+.left {
+    display: none;
+}
+
+.right {
+    background-color: rgb(100, 100, 100);
+}
+
+h2 {
+    color: rgb(30, 30, 190);
+    text-transform: uppercase;
+}

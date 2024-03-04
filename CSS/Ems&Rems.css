@@ -1,0 +1,30 @@
+html {
+    font-size: 20px;
+}
+
+hr {
+    height: 5px;
+    background-color: #f32525;
+}
+
+#Ems ul {
+    font-size: 1.5em;
+    padding: 0 1em;
+}
+
+#Ems button {
+    font-size: 1.5em;
+    background-color: aqua;
+    border-radius: 0.8em;
+}
+
+#Rems ul {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+#Rems button {
+    font-size: 1.5rem;
+    background-color: aqua;
+    border-radius: 0.8rem;
+}

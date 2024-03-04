@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    text-decoration: underline green wavy;
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    color: rgb(54, 94, 255);
+    font-size: 50px;
+}
+
+p {
+    color: rgb(250, 36, 61);
+    line-height: 2;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+button {
+    color: rgb(60, 234, 60);
+    background-color: deeppink;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
